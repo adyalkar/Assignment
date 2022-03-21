@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Utility.ExtentReport" />
+	</listeners>
+	<test name="Chrome_Test" enabled="true" preserve-order="true">
+		<parameter name="browserName" value="chrome" />
+		<classes>
+			<!-- <class name="CodePart.LocationSearch" /> -->
+			<!-- <class name="CodePart.Pepperfry" /> -->
+			<!-- <class name="CodePart.GmapSearch" /> -->
+			<!-- <class name="CodePart.TableSearch" /> -->
+			<class name="CodePart.RedBusTC" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Firefox_Test" enabled="false" preserve-order="true">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<!-- <class name="CodePart.AllMovie" /> -->
+			<class name="CodePart.Pepperfry" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Edge_Test" enabled="false" preserve-order="true">
+		<parameter name="browserName" value="edge" />
+		<classes>
+			<class name="CodePart.Pepperfry" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
